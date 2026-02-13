@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Voice Agent AI</string>
+    
+    <!-- Main Activity -->
+    <string name="tap_to_speak">Tap to speak</string>
+    <string name="listening">Listening…</string>
+    <string name="processing">Processing…</string>
+    <string name="mic_button_desc">Microphone button</string>
+    <string name="train_custom_commands">Train Custom Commands</string>
+    
+    <!-- Training Activity -->
+    <string name="train_title">Train Custom Command</string>
+    <string name="record_command">Record Command</string>
+    <string name="stop_recording">Stop Recording</string>
+    <string name="save_command">Save Custom Command</string>
+    <string name="command_hint">e.g., \'lights on\'</string>
+    <string name="action_hint">e.g., \'com.example.app\'</string>
+    
+    <!-- Commands -->
+    <string name="command_examples">Try saying:\n• Call [contact]\n• Send message to [contact]\n• Search for [query]\n• Open [app name]\n• Set alarm\n• What time is it?\n• Navigate to [place]</string>
+    
+    <!-- Learning Stats -->
+    <string name="learning_stats">Commands: %1$d | Custom: %2$d | Accuracy: %3$.1f%%</string>
+    
+    <!-- Feedback -->
+    <string name="command_saved">Custom command saved!</string>
+    <string name="command_learned">Command learned successfully</string>
+    <string name="unknown_command">Unknown command. Would you like to train me?</string>
+    
+    <!-- Permissions -->
+    <string name="permission_required">Permission required</string>
+    <string name="mic_permission_required">Microphone permission is required for voice recognition</string>
+    
+    <!-- Errors -->
+    <string name="error_audio">Audio recording error</string>
+    <string name="error_network">Network error</string>
+    <string name="error_no_match">No match found</string>
+    <string name="error_unknown">Unknown error occurred</string>
+    
+    <!-- Claude AI -->
+    <string name="claude_settings">Claude AI Settings</string>
+    <string name="claude_api_key">API Key</string>
+    <string name="claude_api_key_hint">sk-ant-xxxxxxxxxxxxx</string>
+    <string name="claude_enable">Enable Claude AI</string>
+    <string name="claude_save">Save</string>
+    <string name="claude_test">Test</string>
+    <string name="claude_status_ready">✓ Claude AI is enabled and ready</string>
+    <string name="claude_status_disabled">Claude AI is disabled</string>
+    <string name="claude_status_not_configured">✗ API key not configured</string>
+    <string name="claude_asking">Asking Claude AI for help...</string>
+    <string name="claude_info">Claude AI helps interpret unknown commands and provides intelligent responses. Get your API key at console.anthropic.com</string>
+    
+    <!-- Wake Word -->
+    <string name="wake_word_listening">🎤 Listening for \"Nekro\"</string>
+    <string name="wake_word_detected">Wake word detected!</string>
+    <string name="wake_word_service_title">Voice Agent AI</string>
+    <string name="wake_word_service_text">Listening for wake word \"Nekro\"</string>
+</resources>

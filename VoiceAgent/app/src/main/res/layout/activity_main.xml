@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="16dp">
+
+    <!-- App Title -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/settingsButton"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Settings Button -->
+    <ImageButton
+        android:id="@+id/settingsButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_settings"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:tint="@color/text_secondary"
+        app:layout_constraintTop_toTopOf="@id/titleText"
+        app:layout_constraintBottom_toBottomOf="@id/titleText"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="Settings"/>
+
+    <!-- Wake Word Status -->
+    <TextView
+        android:id="@+id/wakeWordStatusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎤 Listening for &quot;Nekro&quot;"
+        android:textSize="12sp"
+        android:textColor="@color/accent"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:background="@color/card_background"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/titleText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- AI Brain Icon -->
+    <ImageView
+        android:id="@+id/brainIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_brain"
+        android:tint="@color/accent"
+        app:layout_constraintTop_toBottomOf="@id/wakeWordStatusText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Learning Stats -->
+    <TextView
+        android:id="@+id/learningStatsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Commands: 0 | Custom: 0 | Accuracy: 0%"
+        android:textSize="14sp"
+        android:textColor="@color/text_secondary"
+        app:layout_constraintTop_toBottomOf="@id/brainIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Microphone Button -->
+    <ImageButton
+        android:id="@+id/micButton"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_mic"
+        android:background="@drawable/mic_button_background"
+        android:scaleType="centerInside"
+        android:padding="32dp"
+        android:tint="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/learningStatsText"
+        app:layout_constraintBottom_toTopOf="@id/statusText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/mic_button_desc"/>
+
+    <!-- Status Text -->
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tap_to_speak"
+        android:textSize="18sp"
+        android:textColor="@color/text_primary"
+        android:textAlignment="center"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@id/trainingButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Training Button -->
+    <Button
+        android:id="@+id/trainingButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/train_custom_commands"
+        android:textSize="16sp"
+        android:backgroundTint="@color/accent"
+        android:textColor="@android:color/white"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="32dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
